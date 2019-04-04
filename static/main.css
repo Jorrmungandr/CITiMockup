@@ -84,15 +84,13 @@ a:link {
   background-color: var(--light-color);
   border-radius: 100%;
   color: var(--dark-color);
+  position: absolute;
+  bottom: 60px;
 }
 
 #price {
   font-family: arial;
-}
-
-#price-container:hover {
-  background-color: var(--dark-color);
-  color: var(--light-color);
+  font-size: 20px
 }
 
 .footer {
