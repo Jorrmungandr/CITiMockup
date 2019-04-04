@@ -1,5 +1,6 @@
 :root {
-  --light-color: #0098d2;
+  --lighter-color: #0098d2;
+  --light-color: 	#009000;
   --slightly-dark-color: #555;
   --dark-color: #333;
   --bg-color: #D3D3D3;
@@ -56,6 +57,7 @@ a:link {
   color: var(--dark-color);
   width: 100%;
   height: auto;
+  margin-top: 80px;
 }
 
 #text {
@@ -136,7 +138,7 @@ a:link {
   color: white;
 }
 
-.fa-instagram {
-  background: #125688;
+.fa-pinterest {
+  background: #cb2027;
   color: white;
 }
