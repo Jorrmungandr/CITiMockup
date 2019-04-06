@@ -23,7 +23,6 @@ const handleMegaminx = () => {
   `;
   text.innerHTML = `
   Ele tem um total de 50 peças móveis para serem arrumadas, em comparação com as 20 peças móveis do Cubo Mágico 3x3.
-  aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
   `;
   price.innerHTML = ` R$49,99 `;
 }
