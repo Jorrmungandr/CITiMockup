@@ -16,8 +16,8 @@ body {
   background-color: var(--bg-color);
 }
 
-#content-wrapper{
-  padding-bottom: 120px; 
+#content-wrapper {
+  padding-bottom: 120px;
 }
 
 /*N gosto muito daquela cor de link, então tirei*/
@@ -64,9 +64,10 @@ a:link {
   color: var(--dark-color);
   width: 100%;
   height: auto;
-  margin-top: 80px;
-  margin-bottom: 240px;
+  margin-bottom: 300px;
 }
+
+/*Pra quando a página diminuir*/
 
 @media only screen and (max-width: 765px) {
   #text-container {
@@ -99,9 +100,9 @@ a:link {
 
 /*A posição do preço*/
 
-#price-container-wrapper{
+#price-container-wrapper {
   text-align: center;
-  position: absolute; 
+  position: absolute;
   left: 0;
   bottom: 50px auto;
   width: 100%;
@@ -129,7 +130,7 @@ a:link {
   width: 100%;
   background-color: var(--dark-color);
   color: var(--dark-color);
-  height: 50px;      
+  height: 50px;
 }
 
 /*Made with </> and ♥ by Edgar Marques*/
