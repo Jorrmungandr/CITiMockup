@@ -1,6 +1,7 @@
+/*Variáveis pra facilitar minha vida*/
+
 :root {
-  --lighter-color: #0098d2;
-  --light-color: 	#009000;
+  --light-color: #009000;
   --slightly-dark-color: #555;
   --dark-color: #333;
   --bg-color: #D3D3D3;
@@ -15,15 +16,17 @@ body {
   background-color: var(--bg-color);
 }
 
-a:link {
-  text-decoration: none;
-  color: var(--dark-color);
-  -moz-user-select: none; 
-  -webkit-user-select: none; 
-  -ms-user-select:none; 
-  user-select:none;
-  -o-user-select:none;
+#content-wrapper{
+  padding-bottom: 120px; 
 }
+
+/*N gosto muito daquela cor de link, então tirei*/
+
+a:link {
+  color: var(--dark-color);
+}
+
+/*Navbar responsiva*/
 
 .navbar {
   display: flex;
@@ -35,14 +38,15 @@ a:link {
 
 .navbar a {
   float: left;
-  padding: 13px;
-  color: var(--dark-color);
-  flex: 1;
-  justify-content: space-between;
   text-align: center;
+  padding: 13px;
+  flex: 1;
+  color: var(--dark-color);
 }
 
-.navbar a:hover{
+/*Muda a cor quando o mause tá em cima ou quando tá ativa*/
+
+.navbar a:hover {
   background-color: var(--slightly-dark-color);
   color: var(--light-color);
 }
@@ -52,17 +56,35 @@ a:link {
   color: var(--light-color);
 }
 
+/*Os textos*/
+
 #text-container {
+  float: center;
   text-align: center;
   color: var(--dark-color);
   width: 100%;
   height: auto;
   margin-top: 80px;
+  margin-bottom: 240px;
 }
+
+@media only screen and (max-width: 765px) {
+  #text-container {
+    margin-bottom: 0px;
+  }
+}
+
+/*Identação padrão de parágrafo*/
 
 #text {
   text-align: left !important;
   text-indent: 30px;
+}
+
+/*Controlando a imagem (Também responsiva)*/
+
+#image-container {
+  float: left;
 }
 
 #cube-img {
@@ -75,23 +97,30 @@ a:link {
   height: auto;
 }
 
-#image-container {
-  float: left;
+/*A posição do preço*/
+
+#price-container-wrapper{
+  text-align: center;
+  position: absolute; 
+  left: 0;
+  bottom: 50px auto;
+  width: 100%;
 }
 
 #price-container {
   display: inline-block;
+  position: relative;
   background-color: var(--light-color);
-  border-radius: 100%;
   color: var(--dark-color);
-  position: absolute;
-  bottom: 60px;
+  border-radius: 100%;
 }
 
 #price {
   font-family: arial;
-  font-size: 20px
+  font-size: 20px;
 }
+
+/*A posição do footer*/
 
 .footer {
   position: fixed;
@@ -100,13 +129,18 @@ a:link {
   width: 100%;
   background-color: var(--dark-color);
   color: var(--dark-color);
+  height: 50px;      
 }
+
+/*Made with </> and ♥ by Edgar Marques*/
 
 .footer-text {
   color: white;
   float: right;
-  margin-right:5px;
+  margin-right: 5px;
 }
+
+/*Ícones de Rede Social geral*/
 
 .fa {
   padding: 20px;
@@ -122,21 +156,25 @@ a:link {
   justify-content: center !important;
 }
 
+/*Mudar a opacidade com o mouse em cima*/
+
 .fa:hover {
   opacity: 0.7;
 }
 
+/*E os ícones de cada Rede Social e suas cores*/
+
 .fa-facebook {
   background: #3B5998;
-  color: white;
+  color: white !important;
 }
 
 .fa-twitter {
   background: #55ACEE;
-  color: white;
+  color: white !important;
 }
 
 .fa-pinterest {
   background: #cb2027;
-  color: white;
+  color: white !important;
 }
